@@ -1,0 +1,96 @@
+body {
+  background-color: #c7ffcd;
+  font: sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 8vh;
+  font-weight: 700;
+}
+
+.input_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  padding: 1vh;
+  margin-right: 1vh;
+  border: 0.5px solid black;
+  border-radius: 7px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.inputButton {
+  padding: 1vh;
+  background-color: black;
+  border: 0.5px solid black;
+  border-radius: 7px;
+  color: #c7ffcd;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#todo {
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+  padding: 1vh;
+  border: 0.5px solid black;
+  border-radius: 7px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  background-color: white;
+  border: 0.5px solid black;
+  border-radius: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: black;
+  border: 0.5px solid white;
+}
+
+input[type="checkbox"]:checked ~ .tasklist {
+  color: #c7ffcd;
+  text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ .deleteButton {
+  background-color: #c7ffcd;
+  color: black;
+}
+
+span {
+  line-height: 2.1;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.deleteButton {
+  margin-left: auto;
+  margin-right: 0.5vw;
+  width: 30px;
+  padding: 0.8vh;
+  background-color: black;
+  border: 0.5px solid black;
+  border-radius: 4px;
+  color: #c7ffcd;
+  text-align: center;
+  text-decoration: none;
+}
